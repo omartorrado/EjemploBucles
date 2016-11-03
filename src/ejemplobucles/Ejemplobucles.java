@@ -19,7 +19,13 @@ public class Ejemplobucles {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner sc=new Scanner(System.in);
-        System.out.println("Introduce un numero positivo para ver su tabla de multiplicar");
+        
+        //ejercicio divisores
+        Divisores d1=new Divisores();
+        d1.Divide(sc.nextInt());
+         
+        //Ejercicio tabla multiplicar       
+          System.out.println("Introduce un numero positivo para ver su tabla de multiplicar");
         int number=sc.nextInt();
         //usamos el valor absolutos del numero para que se convierta en positivo
         //number=Math.abs(number);
@@ -42,8 +48,10 @@ public class Ejemplobucles {
             if (number>=0){
                 BucleWhile bw=new BucleWhile();
                 bw.multiplicaWhile(number);
+                
                 BucleFor bf=new BucleFor();
                 bf.MultiplicaFor(number);
+                
                 BucleDoWhile bdw=new BucleDoWhile();
                 bdw.multiplicaDoWhile(number);
             }
